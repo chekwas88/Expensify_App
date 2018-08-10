@@ -13,7 +13,7 @@
     "serve": "live-server public/",
     "dev-server": "webpack-dev-server",
     "test": "jest",
-    "start": "server/server.js",
+    "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod"
   },
   "author": "Chekwas88",
