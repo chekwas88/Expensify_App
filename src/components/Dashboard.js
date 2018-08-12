@@ -1,12 +1,13 @@
-import React from 'react';
-import ConnectedExpenseList from './ExpensesList';
-import ConnectedExpenseFilter from './ExpenseListFilter';
-const Dashboard = (props) =>(
-    <div>
-      <ConnectedExpenseFilter />
-      <ConnectedExpenseList />
-    </div>
-  );
+import React from "react";
+import ConnectedExpenseList from "./ExpensesList";
+import ConnectedExpenseFilter from "./ExpenseListFilter";
+import ExpenseSumary from "./ExpenseSummary";
+const Dashboard = props => (
+  <div>
+    <ExpenseSumary />
+    <ConnectedExpenseFilter />
+    <ConnectedExpenseList />
+  </div>
+);
 
-
-export default Dashboard;  
+export default Dashboard;
