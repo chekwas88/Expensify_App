@@ -14,12 +14,15 @@ if (process.env.NODE_ENV === 'test') {
 module.exports = env => {
   const isproduction = env === "production";
   const cssExtract = new miniCssExtract({ filename: "styles.css" });
+
   return {
     entry: "./src/app.js",
     output: {
       path: path.join(__dirname, "/public", "dist"),
       filename: "bundle.js"
     },
+
+    mode: 'development',
 
     module: {
       rules: [

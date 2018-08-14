@@ -22,7 +22,7 @@ const expenseReducer = (state = expensedefault, action) => {
                         ...action.update
                     }
                 } else {
-                    return expenses;
+                    return expense;
                 }
             })
 
